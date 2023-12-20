@@ -26,6 +26,7 @@ public:
 
     friend std::ostream& operator<<(std::ostream& out, const Student& student);
     friend std::istream& operator>>(std::istream& in, Student& student);
+    Student& operator=(const Student& other);
 
     float calculateAverageGrade() const;
 };

@@ -27,6 +27,20 @@ Student::Student(const Student& other)
     }
 }
 
+Student& Student::operator=(const Student& other) {
+    if (this != &other) {
+        delete[] this->grades;
+        this->name = other.name;
+        this->group = other.group;
+        this->numGrades = other.numGrades;
+        this->grades = new int[numGrades];
+        for (int i = 0; i < numGrades; ++i) {
+            this->grades[i] = other.grades[i];
+        }
+    }
+    return *this;
+}
+
 Student::~Student() {
     std::cout << "Destructor called" << std::endl;
     delete[] grades;
@@ -61,13 +75,14 @@ void Student::setGrades(int* grades, int numGrades) {
     this->grades = new int[numGrades];
     for (int i = 0; i < numGrades; ++i) {
         if (grades[i] < 2 || grades[i] > 5) {
-            delete[] this->grades;
+            delete[] this->grades; 
             throw std::invalid_argument("Invalid grade detected");
         }
         this->grades[i] = grades[i];
     }
     this->numGrades = numGrades;
 }
+
 
 std::ostream& operator<<(std::ostream& out, const Student& student) {
     out << "Name: " << student.name << ", Group: " << student.group << ", Grades: ";

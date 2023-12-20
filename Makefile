@@ -129,6 +129,30 @@ App/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/build
 .PHONY : App/fast
 
+src/fileprocessor.o: src/fileprocessor.cpp.o
+.PHONY : src/fileprocessor.o
+
+# target to build an object file
+src/fileprocessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/fileprocessor.cpp.o
+.PHONY : src/fileprocessor.cpp.o
+
+src/fileprocessor.i: src/fileprocessor.cpp.i
+.PHONY : src/fileprocessor.i
+
+# target to preprocess a source file
+src/fileprocessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/fileprocessor.cpp.i
+.PHONY : src/fileprocessor.cpp.i
+
+src/fileprocessor.s: src/fileprocessor.cpp.s
+.PHONY : src/fileprocessor.s
+
+# target to generate assembly for a file
+src/fileprocessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/fileprocessor.cpp.s
+.PHONY : src/fileprocessor.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... App"
+	@echo "... src/fileprocessor.o"
+	@echo "... src/fileprocessor.i"
+	@echo "... src/fileprocessor.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

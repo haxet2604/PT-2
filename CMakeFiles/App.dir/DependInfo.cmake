@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/borisbin/Desktop/cpp/lab_two/src/fileprocessor.cpp" "CMakeFiles/App.dir/src/fileprocessor.cpp.o" "gcc" "CMakeFiles/App.dir/src/fileprocessor.cpp.o.d"
   "/Users/borisbin/Desktop/cpp/lab_two/src/main.cpp" "CMakeFiles/App.dir/src/main.cpp.o" "gcc" "CMakeFiles/App.dir/src/main.cpp.o.d"
   "/Users/borisbin/Desktop/cpp/lab_two/src/student.cpp" "CMakeFiles/App.dir/src/student.cpp.o" "gcc" "CMakeFiles/App.dir/src/student.cpp.o.d"
   )

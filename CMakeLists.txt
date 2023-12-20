@@ -10,6 +10,7 @@ project (App VERSION 1.0)
 set(SOURCES
     src/main.cpp
     src/student.cpp
+    src/fileprocessor.cpp
 )
 
 # Add an executable with the above sources
